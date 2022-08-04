@@ -1,7 +1,7 @@
 {
 	"name": "crypto-transactions-cli",
 	"description": "CLI program to help crypto investors query their portfolio data from a csv file",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"license": "UNLICENSED",
 	"type": "module",
 	"bin": {
