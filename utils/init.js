@@ -9,7 +9,7 @@ const pkg = JSON.parse(
 export default ({ clear = false }) => {
 	unhandled();
 	welcome({
-		title: `crypto-transactions-cli`,
+		title: `crypto-trans`,
 		tagLine: `by ammar-alkhooly`,
 		description: `${pkg.description}\n${figlet.textSync(
 			'Crypto Portfolio CLI'

@@ -8,7 +8,7 @@
  |_|   |_|  \___/| .__/|_|_| |_|\___|
                  |_|
 
- * crypto-transactions-cli
+ * crypto-trans
  * CLI program to help crypto investors query their portfolio data from csv file
  * Note from me: I have enjoyed working on this Task! Thanks, I've learned a lot from this...
  * @author ammar-alkhooly <https://www.linkedin.com/in/ammar-alkhooly/>

@@ -1,11 +1,10 @@
 {
-	"name": "crypto-transactions-cli",
+	"name": "crypto-trans",
 	"description": "CLI program to help crypto investors query their portfolio data from a csv file",
 	"version": "0.0.7",
 	"license": "UNLICENSED",
 	"type": "module",
 	"bin": {
-		"crypto-transactions-cli": "index.js",
 		"crypto-trans": "index.js"
 	},
 	"author": {
@@ -14,6 +13,8 @@
 		"url": "https://www.linkedin.com/in/ammar-alkhooly/"
 	},
 	"keywords": [
+		"crypto-trans",
+		"crypto-trans-cli",
 		"crypto-transactions-cli",
 		"ammar-alkhooly",
 		"crypto portfolio",
