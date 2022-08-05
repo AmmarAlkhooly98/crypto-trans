@@ -10,24 +10,35 @@ https://user-images.githubusercontent.com/48621790/182963152-168ea935-7366-4b98-
 
 ## Table of Contents
 
-1. [Usage](#Usage)
-2. [Design](#Design)
-    1. [/index.js](#/index.js)
-    1. [/utils](#/utils)
-    1. [/lib](#/lib)
-    1. [/lib/index.js](#/lib/index.js)
-    1. [/lib/portfolio](#/lib/portfolio)
-    1. [/lib/portfolio/csv](#/lib/portfolio/csv)
-    1. [/lib/portfolio/index.js](#/lib/portfolio/index.js)
-    1. [/lib/portfolio/portfolioBalance.js](#/lib/portfolio/portfolioBalance.js)
-    1. [/lib/service](#/lib/service)
-    1. [/lib/api](#/lib/api)
-    1. [/lib/validation](#/lib/validation)
-3. [Cache key standard](#Cache-Key-Naming-Conventions)
-4. [More Details about crypto-trans](#More-Details-about-crypto-trans)
-5. [Upcoming features](#Upcoming-features)
+1. [CLI Example Commands](#CLI-Example-Commands)
+2. [Usage](#Repo-Usage)
+3. [Design](#Design)
+    1. [/index.js](/index.js)
+    2. [/utils](/utils)
+    3. [/lib](/lib)
+    4. [/lib/index.js](/lib/index.js)
+    5. [/lib/portfolio](/lib/portfolio)
+    6. [/lib/portfolio/csv](/lib/portfolio/csv)
+    7. [/lib/portfolio/index.js](/lib/portfolio/index.js)
+    8. [/lib/portfolio/portfolioBalance.js](/lib/portfolio/portfolioBalance.js)
+    9. [/lib/service](/lib/service)
+    10. [/lib/api](/lib/api)
+    11. [/lib/validation](/lib/validation)
+4. [Cache key standard](#Cache-Key-Naming-Conventions)
+5. [More Details about crypto-trans](#More-Details-about-crypto-trans)
+6. [Upcoming features](#Upcoming-features)
 
-## Usage
+### CLI Example Commands
+
+```
+  crypto-trans help                      Print help
+  crypto-trans                           get all portfolio balances for each token
+  crypto-trans -d 25-10-2019 -t ETH      query portfolio by date and token
+  crypto-trans -d 25-10-2019             query portfolio by date
+  crypto-trans -t BTC                    query portfolio by token
+```
+
+## Repo Usage
 
 -   Clone/download the [repo](https://github.com/AmmarAlkhooly98/crypto-trans)
 -   `npm i`
@@ -42,31 +53,21 @@ https://user-images.githubusercontent.com/48621790/182963152-168ea935-7366-4b98-
     -   ### /lib
         here we store all the main logic for the cli program seperated in folders for scalability and to be maintainable for the long run
     -   ### /lib/index.js
-        here we have the main logic and starting point as the user writes a command, the `checkCmnd` function will be called by the root [/index.js](#/index.js) file that sends along the flag args. And from here we make the appropriate actions based on the user query input. First thing, we chack if the user query along with query data validations and based on that, we then check the query data if available in cache to send it right away, otherwise we send the query data to the [/lib/portfolio/index.js](#/lib/portfolio/index.js) file to read the csv file and from here we finally send the returned data to the [/lib/portfolio/portfolioBalance.js](#/lib/portfolio/portfolioBalance.js) file to show the user portfolio summary in the terminal
+        here we have the main logic and starting point as the user writes a command, the `checkCmnd` function will be called by the root [/index.js](/index.js) file that sends along the flag args. And from here we make the appropriate actions based on the user query input. First thing, we chack if the user query along with query data validations and based on that, we then check the query data if available in cache to send it right away, otherwise we send the query data to the [/lib/portfolio/index.js](/lib/portfolio/index.js) file to read the csv file and from here we finally send the returned data to the [/lib/portfolio/portfolioBalance.js](/lib/portfolio/portfolioBalance.js) file to show the user portfolio summary in the terminal
     -   ### /lib/portfolio
         here we store the main logic for portfolio related actions and csv file data
-    -   ### /lib/portfolio/csv
-        here we store all the user csv transaction files to read from it later on in [/lib/portfolio/index.js](#/lib/portfolio/index.js)
+    -   ### [/lib/portfolio/csv](lib/portfolio/csv/)
+        here we store all the user csv transaction files to read from it later on in [/lib/portfolio/index.js](/lib/portfolio/index.js)
     -   ### /lib/portfolio/index.js
         here we have we receive the potential query data, and read the large csv file using readStreams in chunks along with the calculations based on many factors like _Deposit_ or _Withdraw_ and then we also use this file to save the query data to the cache using node-cache
     -   ### /lib/portfolio/portfolioBalance.js
-        here we reach the final step in the process where the data is read and passed to this file to display the profile summary data in a table format. Also we use the cryptocompare API from here [/lib/api](#/lib/api) to get the token price for the portfolio calculations.
+        here we reach the final step in the process where the data is read and passed to this file to display the profile summary data in a table format. Also we use the cryptocompare API from here [/lib/api](/lib/api) to get the token price for the portfolio calculations.
     -   ### /lib/service
         here we have the initial node-cache and we can include any business logic here later on.
     -   ### /lib/api
         here we use the cryptocompare API to get info about any cryptocurrency. For example, we used the API here to get the current USD price for the given token dynamically
     -   ### /lib/validation
         here we have all the user input validation like checking whether or not the user typed in a valid date or token before reading the file and send feedback to the user if not valid.
-
-### CLI example commands
-
-```
-  crypto-trans help                      Print help
-  crypto-trans                           get all portfolio balances for each token
-  crypto-trans -d 25-10-2019 -t ETH      query portfolio by date and token
-  crypto-trans -d 25-10-2019             query portfolio by date
-  crypto-trans -t BTC                    query portfolio by token
-```
 
 ## Cache Key Naming Conventions
 
