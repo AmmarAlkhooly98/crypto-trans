@@ -2,7 +2,7 @@
 
 CLI program to help crypto investors query their portfolio data from a csv file
 
-## Video Demo
+## crypto-trans CLI Video Demo
 
 https://user-images.githubusercontent.com/48621790/182963152-168ea935-7366-4b98-93b1-fcbed3028fef.mov
 
