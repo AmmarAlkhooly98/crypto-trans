@@ -1,7 +1,7 @@
 {
 	"name": "crypto-trans",
 	"description": "CLI program to help crypto investors query their portfolio data from a csv file",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"license": "UNLICENSED",
 	"type": "module",
 	"repository": {
