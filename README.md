@@ -41,13 +41,19 @@ https://user-images.githubusercontent.com/48621790/182963152-168ea935-7366-4b98-
 
 ### CLI Help Info
 
+<span style="color:green">
 USAGE
+</span>
 
-`$: crypto-trans <command> [option]`
-
-COMMANDS
-
+```c
+crypto-trans <command> [option]
 ```
+
+<span style="color:blue">
+COMMANDS
+</span>
+
+```c
   help                                       Print help info
   --token, -t                                query portfolio by token
   --date, -d                                 query portfolio by date
@@ -58,7 +64,9 @@ COMMANDS
   EX: crypto-trans -t BTC                    query portfolio by token
 ```
 
+<span style="color:orange">
 OPTIONS
+</span>
 
 ```
   -d, --date       Transaction date value, format: DD-MM-YYYY

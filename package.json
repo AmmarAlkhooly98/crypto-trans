@@ -1,9 +1,13 @@
 {
 	"name": "crypto-trans",
 	"description": "CLI program to help crypto investors query their portfolio data from a csv file",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"license": "UNLICENSED",
 	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/AmmarAlkhooly98/crypto-trans.git"
+	},
 	"bin": {
 		"crypto-trans": "index.js"
 	},
