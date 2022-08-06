@@ -68,7 +68,7 @@ COMMANDS
 OPTIONS
 </span>
 
-```
+```c
   -d, --date       Transaction date value, format: DD-MM-YYYY
   -t, --token      Token symbol value, Ex: BTC
   -c, --clear      Clear the console Default: true
