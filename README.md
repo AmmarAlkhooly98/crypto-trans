@@ -2,7 +2,7 @@
 
 CLI program to help crypto investors query their portfolio data from a csv file.
 
-[Try it out in your terminal](https://www.npmjs.com/package/crypto-trans)
+[Try the npm package out in your terminal](https://www.npmjs.com/package/crypto-trans) `npm i crypto-trans -g`
 
 ## crypto-trans CLI Video Demo
 
@@ -10,9 +10,10 @@ https://user-images.githubusercontent.com/48621790/182963152-168ea935-7366-4b98-
 
 ## Table of Contents
 
-1. [CLI Example Commands](#CLI-Example-Commands)
-2. [Usage](#Repo-Usage)
-3. [Design](#Design)
+1. [CLI Usage](#CLI-Usage)
+2. [CLI Help Info](#CLI-Help-Info)
+3. [Usage](#Repo-Usage)
+4. [Design](#Design)
     1. [/index.js](/index.js)
     2. [/utils](/utils)
     3. [/lib](/lib)
@@ -24,11 +25,11 @@ https://user-images.githubusercontent.com/48621790/182963152-168ea935-7366-4b98-
     9. [/lib/service](/lib/service)
     10. [/lib/api](/lib/api)
     11. [/lib/validation](/lib/validation)
-4. [Cache key standard](#Cache-Key-Naming-Conventions)
-5. [More Details about crypto-trans](#More-Details-about-crypto-trans)
-6. [Upcoming features](#Upcoming-features)
+5. [Cache key standard](#Cache-Key-Naming-Conventions)
+6. [More Details about crypto-trans](#More-Details-about-crypto-trans)
+7. [Upcoming features](#Upcoming-features)
 
-### CLI Example Commands
+### CLI Usage
 
 ```
   crypto-trans help                      Print help
@@ -36,6 +37,36 @@ https://user-images.githubusercontent.com/48621790/182963152-168ea935-7366-4b98-
   crypto-trans -d 25-10-2019 -t ETH      query portfolio by date and token
   crypto-trans -d 25-10-2019             query portfolio by date
   crypto-trans -t BTC                    query portfolio by token
+```
+
+### CLI Help Info
+
+USAGE
+
+`$: crypto-trans <command> [option]`
+
+COMMANDS
+
+```
+  help                                       Print help info
+  --token, -t                                query portfolio by token
+  --date, -d                                 query portfolio by date
+  -----------------------------------------  ---------------------------------------
+  EX: crypto-trans                           get all portfolio balances for each token
+  EX: crypto-trans -d 25-10-2019 -t ETH      query portfolio by date and token
+  EX: crypto-trans -d 25-10-2019             query portfolio by date
+  EX: crypto-trans -t BTC                    query portfolio by token
+```
+
+OPTIONS
+
+```
+  -d, --date       Transaction date value, format: DD-MM-YYYY
+  -t, --token      Token symbol value, Ex: BTC
+  -c, --clear      Clear the console Default: true
+  --noClear        Don't clear the console Default: false
+  -debug, --debug  Print debug info Default: false
+  -v, --version    Print CLI version Default: false
 ```
 
 ## Repo Usage
