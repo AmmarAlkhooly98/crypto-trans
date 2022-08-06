@@ -1,16 +1,8 @@
 #!/usr/bin/env node
 
 /**
-  ____                  _
- |  _ \ _ __ ___  _ __ (_)_ __   ___
- | |_) | '__/ _ \| '_ \| | '_ \ / _ \
- |  __/| | | (_) | |_) | | | | |  __/
- |_|   |_|  \___/| .__/|_|_| |_|\___|
-                 |_|
-
  * crypto-trans
  * CLI program to help crypto investors query their portfolio data from csv file
- * Note from me: I have enjoyed working on this Task! Thanks, I've learned a lot from this...
  * @author ammar-alkhooly <https://www.linkedin.com/in/ammar-alkhooly/>
  */
 
