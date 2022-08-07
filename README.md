@@ -59,8 +59,8 @@ COMMANDS
   --date, -d                                 query portfolio by date
   -----------------------------------------  ---------------------------------------
   EX: crypto-trans                           get all portfolio balances for each token
-  EX: crypto-trans -d 25-10-2019 -t ETH      query portfolio by date and token
-  EX: crypto-trans -d 25-10-2019             query portfolio by date
+  EX: crypto-trans -d 2019-10-25 -t ETH      query portfolio by date and token
+  EX: crypto-trans -d 2019-10-25             query portfolio by date
   EX: crypto-trans -t BTC                    query portfolio by token
 ```
 
@@ -69,7 +69,7 @@ OPTIONS
 </span>
 
 ```c
-  -d, --date       Transaction date value, format: DD-MM-YYYY
+  -d, --date       Transaction date value, format: YYYY-MM-DD
   -t, --token      Token symbol value, Ex: BTC
   -c, --clear      Clear the console Default: true
   --noClear        Don't clear the console Default: false

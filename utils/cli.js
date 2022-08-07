@@ -5,7 +5,7 @@ const flags = {
 	date: {
 		type: `string`,
 		alias: `d`,
-		desc: `Transaction date value, format: DD-MM-YYYY`
+		desc: `Transaction date value, format: YYYY-MM-DD`
 	},
 	token: {
 		type: `string`,
@@ -46,10 +46,10 @@ const commands = {
 	'EX: crypto-trans': {
 		desc: `get all portfolio balances for each token`
 	},
-	'EX: crypto-trans -d 25-10-2019 -t ETH': {
+	'EX: crypto-trans -d 2019-10-24 -t ETH': {
 		desc: `query portfolio by date and token`
 	},
-	'EX: crypto-trans -d 25-10-2019': {
+	'EX: crypto-trans -d 2019-10-25': {
 		desc: `query portfolio by date`
 	},
 	'EX: crypto-trans -t BTC': {
