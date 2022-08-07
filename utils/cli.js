@@ -5,7 +5,7 @@ const flags = {
 	date: {
 		type: `string`,
 		alias: `d`,
-		desc: `Transaction date value, format: DD-MM-YYYY`
+		desc: `Transaction date value, format: YYYY-MM-DD`
 	},
 	token: {
 		type: `string`,
