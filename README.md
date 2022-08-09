@@ -1,6 +1,6 @@
-# crypto-trans
+# crypto-trans CLI
 
-CLI program to help crypto investors query their portfolio data from a csv file.
+Crypto-trans is an open source CLI program to help crypto investors query their portfolio data from large csv file.
 
 [Try the npm package out in your terminal](https://www.npmjs.com/package/crypto-trans) `npm i crypto-trans -g`
 
