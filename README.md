@@ -34,8 +34,8 @@ https://user-images.githubusercontent.com/48621790/182963152-168ea935-7366-4b98-
 ```
   crypto-trans help                      Print help
   crypto-trans                           get all portfolio balances for each token
-  crypto-trans -d 25-10-2019 -t ETH      query portfolio by date and token
-  crypto-trans -d 25-10-2019             query portfolio by date
+  crypto-trans -d 2019-25-10 -t ETH      query portfolio by date and token
+  crypto-trans -d 2019-25-10             query portfolio by date
   crypto-trans -t BTC                    query portfolio by token
 ```
 
@@ -81,7 +81,7 @@ OPTIONS
 
 -   Clone/download the [repo](https://github.com/AmmarAlkhooly98/crypto-trans).
 -   `npm i`
--   `npm link` (this will allow you to use the `crypto-trans` command to run any cli commands in the repo from your terminal).
+-   `npm link` (this will allow you to use the `crypto-trans` command to run any cli commands in the repo from your terminal). Or, run the CLI using node with project open on the same DIR as the root file [/index.js](/index.js) `node index.js <command> [option]`
 
 *   ## Design
     Architectural and Design patterns.
