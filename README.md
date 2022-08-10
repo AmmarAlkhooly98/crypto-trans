@@ -31,7 +31,7 @@ https://user-images.githubusercontent.com/48621790/182963152-168ea935-7366-4b98-
 
 ## CLI Usage
 
-```
+```c
   crypto-trans help                      Print help
   crypto-trans                           get all portfolio balances for each token
   crypto-trans -d 2019-10-25 -t ETH      query portfolio by date and token
