@@ -29,7 +29,7 @@ https://user-images.githubusercontent.com/48621790/182963152-168ea935-7366-4b98-
 6. [More Details about crypto-trans](#More-Details-about-crypto-trans)
 7. [Upcoming features](#Upcoming-features)
 
-### CLI Usage
+## CLI Usage
 
 ```
   crypto-trans help                      Print help
@@ -39,7 +39,7 @@ https://user-images.githubusercontent.com/48621790/182963152-168ea935-7366-4b98-
   crypto-trans -t BTC                    query portfolio by token
 ```
 
-### CLI Help Info
+## CLI Help Info
 
 <span style="color:green">
 USAGE
