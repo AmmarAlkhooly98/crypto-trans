@@ -1,4 +1,4 @@
-# crypto-trans CLI
+# crypto-trans CLI Naji
 
 Crypto-trans is an open source CLI program to help crypto investors query their portfolio data from large csv file.
 
