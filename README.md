@@ -1,4 +1,5 @@
 # crypto-trans CLI
+by hamod
 
 Crypto-trans is an open source CLI program to help crypto investors query their portfolio data from large csv file.
 
